@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MoodAnalyzerProblem;
+
 namespace TestProject1
 {
     [TestClass]
@@ -11,6 +12,14 @@ namespace TestProject1
             MoodAnalyzer1 analyser = new MoodAnalyzer1();
             string expected = analyser.AnalyseMood("I am in sad mood");
             Assert.AreEqual("SAD", expected);
+        }
+
+        [TestMethod]
+        public void GivenInputIsString_WhenTestAnalyseMood_ShouldReturnHappy()
+        {
+            MoodAnalyzer1 analyser = new MoodAnalyzer1();
+            string expected = analyser.AnalyseMood("I am in any mood");
+            Assert.AreEqual("HAPPY", expected);
         }
 
     }
