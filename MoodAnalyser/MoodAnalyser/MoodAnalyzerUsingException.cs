@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MoodAnalyser
+﻿internal class MoodAnalyzerUsingException
 {
-    internal class MoodAnalyzerUsingException
+    internal string MoodAnalyzer2(object p)
     {
+        throw new NotImplementedException();
     }
 }
