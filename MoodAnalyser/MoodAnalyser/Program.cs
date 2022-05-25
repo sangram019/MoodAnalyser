@@ -1,4 +1,8 @@
-﻿using MoodAnalyzerProblem;
+﻿// See https://aka.ms/new-console-template for more information
+
+
+using MoodAnalyzerProblem;
+
 
 Console.WriteLine("Welcome to Mood Analyzer Problem");
 
@@ -17,3 +21,7 @@ Console.WriteLine("Default Constructor : " + result2);
 MoodAnalyser2 analyzer3 = new("I am in Sad mood");
 string result3 = analyzer3.AnalyseMood2();
 Console.WriteLine("Parameterized Constructor : " + result3);
+
+MoodAnalyse analyzer4 = new("Null");
+string result4 = analyzer4.analysisMood();
+Console.WriteLine("Handle Exception : " + result4);
